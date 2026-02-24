@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abarrotes Hernandez Sarabia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<div class="hero-container">
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+  <img src="Logo.png" alt="Logo Rincón De Villa">
+</div>
+    <nav>
+      <div class="buscador">
+  <input type="text" id="busquedaInput" placeholder="Buscar en la página...">
+  <button onclick="buscarManual()">Buscar</button>
+  <ul id="listaResultados" class="lista-resultados"></ul>
+</div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#catering">Catering</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section id="inicio" class="hero">
+    <h1>ABARROTES HERNANDEZ SARABIA</h1>
+  </section>
+</div>
+
+  <!-- Nosotros -->
+<section id="nosotros" class="nosotros">
+  <div class="nosotros-contenido">
+    <video autoplay muted loop playsinline class="video-nosotros">
+  <source src="Nosotros.mp4" type="video/mp4">
+  Tu navegador no soporta videos.
+</video>
+    <div class="texto-nosotros">
+      <h2>Quienes somos?</h2>
+      <p>Tienda Hernández Sarabia es un negocio familiar que nace con el propósito de atender las necesidades básicas de la comunidad, ofreciendo abarrotes, chiles, semillas y productos esenciales del día a día. Nos distinguimos por la confianza, el trato amable y la responsabilidad en cada venta.
+</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="servicios" class="servicios-seccion">
+  <div class="servicios-contenedor">
+
+    <!-- IZQUIERDA (Servicios) -->
+    <div class="texto-servicios">
+      <h2><span class="rojo">Ofer</span> <span class="blanco">ta</span></h2>
+      <p>
+        En Tienda Hernández Sarabia ofrecemos:
+      </p>
+
+      <div class="servicios-items">
+
+        <div class="item-servicio">
+          <div class="icono">👨‍👩‍👧‍👦</div>
+          <p>
+            🥫 Abarrotes<br><br>
+            🌶️ Chiles<br><br>
+            🌾 Semillas<br><br>
+            🧂 Productos esenciales
+          </p>
+        </div>
+
+        <div class="item-servicio">
+          <div class="icono">🎉</div>
+          <p>
+            🚚 SERVICIO A DOMICILIO<br><br>
+            Compra sin salir de casa<br><br>
+            Atención personalizada y entrega rápida.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DERECHA (Video) -->
+    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
+      <video autoplay muted loop playsinline 
+             style="width:100%; max-width:400px; border-radius:15px;">
+        <source src="Nosotros2.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Galería -->
+<section id="galeria" class="galeria-seccion">
+  <h2 class="titulo-galeria"><span class="rojo">Galería</span></h2>
+
+  <div class="galeria-wrapper">
+    <button class="galeria-btn izquierda">&#10094;</button>
+
+    <div class="carousel fade-in" id="galeriaCarousel">
+      <img src="p1.jpeg" alt="Platillo 1" />
+      <img src="p2.jpeg" alt="Platillo 2" />
+      <img src="p3.jpeg" alt="Platillo 3" />
+      <img src="p4.jpeg" alt="Platillo 4" />
+      <img src="p5.jpeg" alt="Platillo 5" />
+      <img src="p6.jpeg" alt="Platillo 6" />
+      <img src="p7.jpeg" alt="Platillo 7" />
+      <img src="p8.jpeg" alt="Platillo 8" />
+      <img src="p9.jpeg" alt="Platillo 9" />
+      <img src="p10.jpeg" alt="Platillo 10" />
+    </div>
+
+    <button class="galeria-btn derecha">&#10095;</button>
+  </div>
+</section>
+<div class="contenedor-boton-carrito">
+  <a href="carrito.html" class="btn-ir-carrito">
+    🛒 Comprar Productos
+  </a>
+</div>
+
+<!-- Características -->
+<section id="caracteristicas">
+  <h2 class="titulo-seccion">Blog</h2>
+  <div class="caracteristicas-circulares">
+    <div class="caracteristica-circulo">
+      <img src="Ahorro.jpeg" alt="Alta calidad" />
+      <h3>Consejos de ahorro en el hogar</h3>
+      <p></p>
+    </div>
+    <div class="caracteristica-circulo">
+      <img src="Receta.jpeg" alt="Ambiente tradicional" />
+      <h3>Recetas tradicionales</h3>
+      <p></p>
+    </div>
+    <div class="caracteristica-circulo">
+      <img src="Promocion.jpeg" alt="Limpieza impecable" />
+      <h3>Promociones especiales</h3>
+      <p></p>
+    </div>
+    <div class="caracteristica-circulo">
+      <img src="Producto.jpeg" alt="Toque familiar" />
+      <h3>Recomendaciones de productos</h3>
+      <p></p>
+    </div>
+    <div class="caracteristica-circulo">
+      <img src="Precio.jpeg" alt="Atención" />
+      <h3>Precios accecibles</h3>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonios" class="testimonios">
+  <h2>Testimonios</h2>
+
+  <div class="contenedor-testimonios">
+
+    <div class="tarjeta-testimonio">
+      <p>"Excelente servicio y productos siempre frescos. ¡Muy recomendable!"</p>
+      <div class="cliente">
+        <img src="cara1.jpeg" alt="Cliente 1">
+        <div>
+          <h4>María López</h4>
+          <div class="estrellas">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta-testimonio">
+      <p>"El mejor lugar para hacer mis compras, todo limpio y organizado."</p>
+      <div class="cliente">
+        <img src="cara2.jpeg" alt="Cliente 2">
+        <div>
+          <h4>Carlos Hernández</h4>
+          <div class="estrellas">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta-testimonio">
+      <p>"Siempre encuentro lo que necesito y el trato es muy amable."</p>
+      <div class="cliente">
+        <img src="cara3.jpeg" alt="Cliente 3">
+        <div>
+          <h4>Ana García</h4>
+          <div class="estrellas">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="horarios" class="horarios">
+  <h2>Horarios de Atención</h2>
+
+  <div class="contenedor-horarios">
+
+    <!-- Horarios -->
+    <div class="tarjeta-horario">
+      <h3>Horario Semanal</h3>
+      <ul>
+        <li><span>Lunes - Viernes</span> <strong>8:00 AM - 9:00 PM</strong></li>
+        <li><span>Sábado</span> <strong>9:00 AM - 8:00 PM</strong></li>
+        <li><span>Domingo</span> <strong>9:00 AM - 2:00 PM</strong></li>
+      </ul>
+    </div>
+
+    <!-- Calendario -->
+    <div class="tarjeta-calendario">
+      <h3>Calendario</h3>
+      <input type="date">
+      <p class="nota">* Los días festivos pueden variar.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección de Contacto Final Unificada -->
+<section id="contacto-final">
+  <div class="contacto-contenido">
+    <div class="cta-info">
+      <h2>¡Contáctanos Ahora!</h2>
+      <div class="cta-icons">
+        <p>📍 Ubicación: </p>
+        <p>📞 Teléfono: 773-144-34-71</p>
+        <p>✉️ Redes sociales: Hernandez Sarabia</p>
+      </div>
+    </div>
+    <form>
+      <h3>Envíanos un Mensaje</h3>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo" required />
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<section id="banners" class="banners">
+  <div class="banners-contenedor">
+
+    <div class="banner-item">
+      <img src="banner1.jpeg" alt="Promoción Tienda">
+      <div class="banner-overlay">
+        <h3>Ofertas Especiales</h3>
+        <p>Descubre nuestras promociones semanales</p>
+      </div>
+    </div>
+
+    <div class="banner-item">
+      <img src="banner2.jpeg" alt="Productos Destacados">
+      <div class="banner-overlay">
+        <h3>Productos Frescos</h3>
+        <p>Calidad garantizada todos los días</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Catering y Ubicación -->
+<section id="catering" class="catering-seccion">
+
+  <h2 class="titulo-catering">Catering y Ubicación</h2>
+
+  <div class="catering-contenedor">
+
+    <!-- Información Catering -->
+    <div class="catering-info">
+      <h3>Servicio de Catering</h3>
+      <p>
+        Ofrecemos servicio de catering.
+        Productos frescos, básicos para el hogar y pedidos especiales.
+      </p>
+
+      <ul>
+        <li>✔ Atención personalizada</li>
+        <li>✔ Entrega puntual</li>
+        <li>✔ Pedidos por WhatsApp</li>
+        <li>✔ Precios accesibles</li>
+      </ul>
+
+      <a href="https://wa.me/7732340392" target="_blank" class="btn-catering">
+        📲 Solicitar Cotización
+      </a>
+    </div>
+
+    <!-- Mapa -->
+    <div class="catering-mapa">
+      <iframe
+  src="https://www.google.com/maps?q=20.173351,-99.328148&hl=es&z=17&output=embed"
+  width="100%"
+  height="400"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+    </div>
+
+  </div>
+
+</section>
+
+  <footer>
+    <p>© 2025 Tienda de abarrotes Hernandez Sarabia</p>
+  </footer>
+
+  <!-- BOTÓN -->
+<div id="chatBoton" class="chat-boton">💬</div>
+
+<!-- VENTANA CHAT -->
+<div id="chatContainer" class="chat-container">
+  <div class="chat-header">
+    <strong>Chat</strong>
+    <span id="cerrarChat">✖</span>
+  </div>
+
+  <div id="chatMensajes" class="chat-mensajes"></div>
+
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Escribe un mensaje..." />
+    <button id="enviarBtn">Enviar</button>
+  </div>
+</div>
+  <script src="buscador.js"></script>
+  <script src="interactividad.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
